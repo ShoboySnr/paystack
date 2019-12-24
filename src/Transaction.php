@@ -55,7 +55,8 @@
 		public function initialize( array $data = [], $rawResponse = false )
 		{
 			// values set via mutator
-			$data['callback_url'] = $this->_callbackUrl;
+			$this->_callbackUrl = $data['callback_url'];
+			// $data['callback_url'] = $this->_callbackUrl;
 
 			// override refernce $data['reference'] value
 			if ( $this->reference ) {
